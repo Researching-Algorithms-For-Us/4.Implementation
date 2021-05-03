@@ -6,7 +6,9 @@
 + [기초 코드](https://www.youtube.com/watch?v=6lhVHP8bkPA&list=PLtqbFd2VIQv4O6D6l9HcD732hdrnYb6CY&index=3)
 + [배열](https://www.youtube.com/watch?v=6lhVHP8bkPA&list=PLtqbFd2VIQv4O6D6l9HcD732hdrnYb6CY&index=4)
 + [연결 리스트](https://www.youtube.com/watch?v=C6MX5u7r72E)
++ [스택](https://www.youtube.com/watch?v=0DsyCXIN7Wg)
 ## 문제
 + [기초](https://www.acmicpc.net/workbook/view/7306)
 + [배열](https://www.acmicpc.net/workbook/view/7307)
 + [연결 리스트](https://www.acmicpc.net/workbook/view/7308)
++ [스택](https://www.acmicpc.net/workbook/view/7309)
