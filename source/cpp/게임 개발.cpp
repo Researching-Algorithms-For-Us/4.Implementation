@@ -14,7 +14,6 @@ struct Pos
 {
     int X;
     int Y;
-    int direction;
 };
 
 Directional MoveDirect(int direct)
@@ -26,10 +25,10 @@ int Traversal(int PosX, int PosY, int direct, int MaxN, int MaxM)
 {
 
     stack<Pos> posStack;
-    posStack.push({ PosX, PosY, direct });
+    posStack.push({ PosX, PosY });
 
     int MoveCount = 0;
-
+    int Curdirect = direct;
     while (!posStack.empty())
     {
         auto pos = posStack.top();
@@ -37,7 +36,7 @@ int Traversal(int PosX, int PosY, int direct, int MaxN, int MaxM)
 
         int CurPosX = pos.X;
         int CurPosY = pos.Y;
-        int Curdirect = pos.direction;
+        
 
         if (CurPosX < 0 || CurPosX >= MaxM)
             continue;
@@ -54,16 +53,16 @@ int Traversal(int PosX, int PosY, int direct, int MaxN, int MaxM)
                 switch (Curdirect)
                 {
                 case North:
-                    posStack.push(Pos{ CurPosX, CurPosY - 1, Curdirect });
+                    posStack.push(Pos{ CurPosX, CurPosY - 1 });
                     break;
                 case East:
-                    posStack.push(Pos{ CurPosX + 1, CurPosY, Curdirect });
+                    posStack.push(Pos{ CurPosX + 1, CurPosY });
                     break;
                 case South:
-                    posStack.push(Pos{ CurPosX, CurPosY + 1, Curdirect });
+                    posStack.push(Pos{ CurPosX, CurPosY + 1 });
                     break;
                 case West:
-                    posStack.push(Pos{ CurPosX - 1, CurPosY, Curdirect });
+                    posStack.push(Pos{ CurPosX - 1, CurPosY });
                     break;
                 }
                
