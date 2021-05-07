@@ -29,11 +29,11 @@ int main()
 		{
 			if (a.length() == b.length())
 			{
-				return a.compare(b) < 0;
+				return a.compare(b) < 0;  // a가 b보다 사전순으로 앞일 때
 			}
 			else
 			{
-				return a.length() < b.length();
+				return a.length() < b.length();  // 오름차순
 			}
 		});
 	
